@@ -1,0 +1,49 @@
+body{
+    max-width: 100%;
+}
+.container{
+    background-color: #faebd7;
+    max-width: 50%;
+    margin: 0 auto;
+}
+@media  (max-width:576px){
+    .container{
+        max-width: 90%;
+    }
+}
+@media (min-width:576px){
+    .container{
+        max-width: 80%;
+    }
+}
+@media (min-width: 800px){
+    .container{
+        max-width:50%;
+    }
+}
+img{
+    width: 50%;
+    margin: 0 auto;
+}
+h1{
+    font-size: xxx-large;
+    text-align: center;
+    margin: 0px;
+    font-family: cursive;
+}
+#description{
+    margin: 2% auto;
+    font-size: medium;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+form{
+    margin-bottom: 7%;
+}
+.back{
+    background-image: url(../images/background.jpg);
+    background-attachment: fixed;
+}

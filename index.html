@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/new.css">
+    <title>Pizza_Order</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <div class="back">
+    <div class="container">
+        <header>
+            <img class="img-responsive" src="images/pizzeria.jpg" alt="logo">
+            <h1 id="title">Joey's Pizzeria</h1>
+            <p id="description">Most delicious pizza's served hot in and around the town..</p>
+            <h2>Place your order below.</h2>
+        </header>
+        <form id="survey-form" >
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email id"
+                required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Phone Number</label>
+                <input type="number" name="number" id="number" class="form-control" placeholder="Enter your phone number" min="7000000000" max="9999999999" required>
+            </div>
+            <div class="form-group">
+                <p>Which kind of crust do you fancy??</p>
+                <select name="crust" id="dropdown" class="form-control" required>
+                    <option value="">Select</option>
+                    <option value="regular">Regular</option>
+                    <option value="crispythin">Crispy Thin</option>
+                    <option value="softpan">Soft Pan</option>
+                    <option value="stuffed">Stuffed</option>
+                    <option value="extremecheesy">Extreme Cheesy</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <p>Pizza Type:</p>
+                <label><input type="radio" name="pizza-type" checked value="Veg" class="form-check-input"/>Veg</label></div>
+                <div class="form-check">
+                <label><input type="radio" name="pizza-type" value="Non-Veg" class="form-check-input"/>Non-Veg</label>
+            </div>
+            <div class="form-group form-check">
+                <p>Select your toppings:</p>
+                <label><input type="checkbox" class="form-check-input" name="topping" value="Olives">Olives</label>
+                <label><input type="checkbox" class="form-check-input" name="topping" value="Mushrooms">Mushrooms</label>
+                <label><input type="checkbox" class="input-checkbox" name="topping" value="Onion_and_tomatoes">Onions & Tomatoes</label>
+                <label><input type="checkbox" class="input-checkbox" name="topping" value="Capsicum">Capsicum</label>
+                <label><input type="checkbox" class="input-checkbox" name="topping" value="GoldenCorn">Golden Corn</label>
+                <label><input type="checkbox" class="input-checkbox" name="topping" value="Sausage">Sausage</label>
+                <label><input type="checkbox" class="input-checkbox" name="topping" value="Pepperoni">Pepperoni</label>
+            </div>
+            <div class="form-group">
+                <label for="textarea">Suggestions or Anything else??</label>
+                <textarea name="comment" id="textarea" class="form-control" placeholder="Enter your text here" rows="5"></textarea>
+            </div>
+            <button id="submit" type="submit" class="btn btn-default btn-block btn-success">Submit</button>
+        </form>
+
+    </div>
+    </div>
+</body>
+</html>
